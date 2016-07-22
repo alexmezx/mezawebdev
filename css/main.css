@@ -50,7 +50,8 @@ table {
 
 /* End of Imports */
 body {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  background-image: url("images/bg2.png"); }
 
 /* Main Styles */
 #landingScreen {
@@ -106,7 +107,8 @@ body {
   width: 100%;
   display: none;
   border-radius: 0;
-  text-align: center; }
+  text-align: center;
+  opacity: 0.8; }
   #navbar-main .navbar-nav {
     width: 100%; }
     #navbar-main .navbar-nav > li {
@@ -115,16 +117,27 @@ body {
 
 #content-main {
   display: none;
-  height: 100vh;
-  padding-top: 40px; }
+  width: 80vw;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  background: #F3F3F3;
+  box-shadow: 0 0 20px black; }
+  @media (max-width: 480px) {
+    #content-main {
+      width: 100vw; } }
   #content-main a {
-    text-decoration: none;
-    color: #262626; }
+    text-decoration: none; }
   #content-main h1 {
+    padding-top: 40px;
     text-align: center;
     font-size: 2em; }
+  #content-main p {
+    padding-top: 20px; }
   #content-main .col-md-4 {
     height: 200px; }
+  #content-main .row {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 .clear {
   clear: both; }
